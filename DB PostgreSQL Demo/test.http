@@ -1,0 +1,23 @@
+GET http://127.0.0.1:3000/employees
+###
+GET http://127.0.0.1:3000/employees/41
+###
+DELETE http://127.0.0.1:3000/employees/5
+###
+POST http://127.0.0.1:3000/employees
+Content-Type: application/json
+
+{
+    "title": "Mrs",
+    "firstName": "James",
+    "lastName": "Blond"
+}
+###
+PATCH http://127.0.0.1:3000/employees/9
+Content-Type: application/json
+
+{
+    "title_of_courtesy": "HERR",
+    "first_name": "Willy",
+    "last_name": "Wonly"
+}
